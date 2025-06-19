@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Book Management System</h1>
+            <p>Manage your book collection with ease</p>
+        </header>
+
+        <main>
+            <!-- Add Book Form -->
+            <section class="add-book-section">
+                <h2>Add New Book</h2>
+                <form id="bookForm">
+                    <div class="form-row">
+                        <input type="text" id="title" placeholder="Book Title" required>
+                        <input type="text" id="author" placeholder="Author" required>
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="isbn" placeholder="ISBN (optional)">
+                        <input type="number" id="published_year" placeholder="Published Year">
+                    </div>
+                    <div class="form-row">
+                        <input type="text" id="genre" placeholder="Genre">
+                    </div>
+                    <div class="form-row">
+                        <textarea id="description" placeholder="Description" rows="3"></textarea>
+                    </div>
+                    <button type="submit" id="submitBtn">Add Book</button>
+                    <button type="button" id="cancelBtn" style="display: none;">Cancel Edit</button>
+                </form>
+            </section>
+
+            <!-- Books List -->
+            <section class="books-section">
+                <div class="section-header">
+                    <h2>Your Books</h2>
+                    <button id="refreshBtn">🔄 Refresh</button>
+                </div>
+                <div id="booksContainer">
+                    <div class="loading">Loading books...</div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
