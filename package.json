@@ -32,11 +32,12 @@
       "!**/node_modules/**"
     ],
     "coverageDirectory": "coverage",
-    "coverageReporters": ["text", "lcov", "html"],    "testMatch": [
+    "coverageReporters": ["text", "lcov", "html"],
+    "testMatch": [
       "**/__tests__/**/*.js",
       "**/?(*.)+(spec|test).js"
     ],
-    "setupFilesAfterEnv": ["<rootDir>/tests/testSetup.js"]
+    "setupFilesAfterEnv": ["<rootDir>/test/testSetup.js"]
   },
   "keywords": ["api", "nodejs", "express", "sqlite", "crud", "book-management"],
   "author": "Your Name",
